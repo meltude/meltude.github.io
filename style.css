@@ -136,7 +136,7 @@ a:focus-visible {
 }
 
 h1,
-h2 {
+h3 {
   margin: 0;
   color: var(--text);
   line-height: 1.2;
@@ -147,7 +147,7 @@ h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
-h2 {
+h3 {
   font-size: 1.25rem;
 }
 
