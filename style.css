@@ -188,6 +188,8 @@ blockquote {
 }
 
 .footer {
+  justify-content: center;
+  text-align: center;
   color: var(--subtle);
   font-size: 0.85rem;
 }
