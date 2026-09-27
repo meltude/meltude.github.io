@@ -12,32 +12,14 @@
 
 @font-face {
   font-family: "Mononoki";
-  src: url("fonts/mononoki-Regular.ttf") format("truetype");
+  src: url("fonts/mononoki-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
-
-@font-face {
-  font-family: "Mononoki";
-  src: url("fonts/mononoki-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Mononoki";
-  src: url("fonts/mononoki-Italic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-}
-
 * {
   box-sizing: border-box;
 }
-
 
 body {
   min-width: 320px;
@@ -86,7 +68,6 @@ a:focus-visible {
   gap: 1rem;
   font-size: 0.9rem;
 }
-
 
 .layout {
   margin: 1rem 0;
