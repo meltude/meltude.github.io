@@ -1,13 +1,14 @@
 :root {
-  --background: #0f1014;
-  --surface: #131317;
-  --surface-raised: #1a1b21;
-  --border: #43444d;
-  --text: #d3d5de;
-  --muted: #868690;
-  --subtle: #575861;
-  --accent: #b6bac8;
-  --link: #e2e4ed;
+  /* Monochrome */
+  --background: #0a0a0a;
+  --surface: #111111;
+  --surface-raised: #1a1a1a;
+  --border: #3a3a3a;
+  --text: #d9d9d9;
+  --muted: #8a8a8a;
+  --subtle: #5c5c5c;
+  --accent: #b0b0b0;
+  --link: #f2f2f2;
 }
 
 @font-face {
