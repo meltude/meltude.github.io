@@ -1,57 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="icon.png">
-  <title>MeltudeContacts()</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="page-shell">
-    <header class="topbar pane">
-      <nav aria-label="Main navigation">
-        <a href="index.html">Overview</a>
-        <a href="projects.html">Projects</a>
-        <a href="notes.html">Notes</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-    <div class="layout">
-      <main class="content">
-        <section class="pane-grid" aria-label="Contact links">
-          <article class="pane">
-            <h3>GitLab</h2>
-            <a class="text-link" href="https://gitlab.com/meltude">gitlab.com/meltude <span aria-hidden="true">-&gt;</span></a>
-          </article>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How to contact Meltude." />
+    <link rel="icon" type="image/svg+xml" href="icon.png" />
+    <title>MeltudeContacts()</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="/fonts/mononoki-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar pane">
+        <nav aria-label="Main navigation">
+          <a href="index.html">Overview</a>
+          <a href="projects.html">Projects</a>
+          <a href="notes.html">Notes</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a href="credits.html">Credits</a>
+        </nav>
+      </header>
 
-          <article class="pane">
-            <h3>GitHub</h2>
-            <a class="text-link" href="https://github.com/meltude">github.com/meltude <span aria-hidden="true">-&gt;</span></a>
-          </article>
+      <div class="layout">
+        <main class="content">
+          <section class="pane-grid" aria-label="Contact links">
+            <div class="section-divider">
+              <h2>Contact</h2>
+            </div>
+            <h1 class="visually-hidden">Contact Meltude</h1>
+            <p class="section-intro">The fastest ways to reach me.</p>
 
-          <article class="pane">
-            <h3>Telegram</h2>
-            <a class="text-link" href="https://t.me/meltude">t.me/meltude <span aria-hidden="true">-&gt;</span></a>
-          </article>
+            <article class="pane">
+              <h3>GitLab</h3>
+              <a
+                class="text-link"
+                href="https://gitlab.com/meltude"
+                target="_blank"
+                rel="noopener noreferrer me"
+                >gitlab.com/meltude <span aria-hidden="true">-&gt;</span></a
+              >
+            </article>
 
-          <article class="pane">
-            <h3>Email</h2>
-            <a class="text-link" href="mailto:meltude@proton.me">meltude@proton.me <span aria-hidden="true">-&gt;</span></a>
-          </article>
+            <article class="pane">
+              <h3>GitHub</h3>
+              <a
+                class="text-link"
+                href="https://github.com/meltude"
+                target="_blank"
+                rel="noopener noreferrer me"
+                >github.com/meltude <span aria-hidden="true">-&gt;</span></a
+              >
+            </article>
 
-           <article class="pane">
-            <h3>Discord</h2>
-            <a class="text-link" href="https://discord.com/users/1549177447726059524">@meltude <span aria-hidden="true">-&gt;</span></a>
-          </article>
+            <article class="pane">
+              <h3>Telegram</h3>
+              <a
+                class="text-link"
+                href="https://t.me/meltude"
+                target="_blank"
+                rel="noopener noreferrer me"
+                >t.me/meltude <span aria-hidden="true">-&gt;</span></a
+              >
+            </article>
 
-           <article class="pane">
-            <h3><img src="icon.png" alt="" aria-hidden="true" style="width: 1em; height: 1em; vertical-align: -0.12em; margin-right: 0.35em;">TeamSlag</h2>
-            <a class="text-link" href="https://t.me/TeamSlag">my organization <span aria-hidden="true">-&gt;</span></a>
-          </article>
-        </section>
-      </main>
+            <article class="pane">
+              <h3>Email</h3>
+              <a class="text-link" href="mailto:meltude@proton.me"
+                >meltude@proton.me <span aria-hidden="true">-&gt;</span></a
+              >
+            </article>
+
+            <article class="pane">
+              <h3>Discord</h3>
+              <a
+                class="text-link"
+                href="https://discord.com/users/1549177447726059524"
+                target="_blank"
+                rel="noopener noreferrer me"
+                >@meltude <span aria-hidden="true">-&gt;</span></a
+              >
+            </article>
+
+            <article class="pane">
+              <h3>
+                <img
+                  class="inline-icon"
+                  src="icon.png"
+                  alt=""
+                  aria-hidden="true"
+                />TeamSlag
+              </h3>
+              <a
+                class="text-link"
+                href="https://t.me/TeamSlag"
+                target="_blank"
+                rel="noopener noreferrer"
+                >My organization <span aria-hidden="true">-&gt;</span></a
+              >
+            </article>
+          </section>
+        </main>
+      </div>
+
+      <footer class="footer">
+        <p class="muted">
+          <a
+            class="text-link"
+            href="https://github.com/meltude/meltude.github.io"
+            target="_blank"
+            rel="noopener"
+            >Source code</a
+          >
+          &middot;
+          <a
+            class="text-link"
+            href="https://madmalik.github.io/mononoki/"
+            target="_blank"
+            rel="noopener"
+            >Font</a
+          >
+        </p>
+      </footer>
     </div>
-  </div>
-</body>
+  </body>
 </html>

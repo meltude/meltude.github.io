@@ -101,8 +101,8 @@ a:focus-visible {
   object-fit: cover;
 }
 
-.profile-details p {
-  margin: 0.2rem 0 0;
+.profile-details dl {
+  margin: 0;
 }
 
 .profile-details strong {
@@ -120,11 +120,97 @@ a:focus-visible {
 
 
 
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--text);
+  line-height: 1.2;
+}
+
 h3 {
   font-size: 1.25rem;
   margin: 0;
   color: var(--text);
   line-height: 1.2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.span-all {
+  grid-column: 1 / -1;
+}
+
+.section-intro {
+  grid-column: 1 / -1;
+  margin: 0;
+  max-width: 55ch;
+  color: var(--muted);
+}
+
+.inline-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.12em;
+  margin-right: 0.35em;
+}
+
+.fact-list {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0.8rem 0 0;
+}
+
+.fact-list > div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+}
+
+.fact-list dt::after {
+  content: ":";
+}
+
+.fact-list dt {
+  display: inline;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.fact-list dd {
+  display: inline;
+  margin: 0;
+  color: var(--muted);
+}
+
+.profile-details .fact-list {
+  margin-top: 0;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chip-list a {
+  display: inline-block;
+  border: 1px solid var(--border);
+  background: var(--surface-raised);
+  padding: 0.25rem 0.6rem;
+  font-size: 0.9rem;
 }
 
 .muted {
@@ -186,6 +272,10 @@ blockquote {
 
 .footer a {
   color: var(--muted);
+}
+
+.footer .text-link {
+  margin-top: 0;
 }
 
 @media (max-width: 680px) {
