@@ -1,0 +1,28 @@
+/* Ash walker — namespaced to avoid clashing with site style.css */
+#ash-stage {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 110px;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 50;
+}
+
+#ash-player {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  image-rendering: pixelated;
+  will-change: transform;
+  user-select: none;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #ash-stage {
+    display: none;
+  }
+}
