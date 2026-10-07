@@ -267,6 +267,39 @@ blockquote {
   margin-top: 0;
 }
 
+.footer-badges {
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge-row a {
+  display: inline-block;
+  line-height: 0;
+}
+
+.badge-row img {
+  display: block;
+  height: 31px;
+  width: auto;
+}
+
+/* Dedicated walker lane: pages with #ash-stage get 110px of space
+   below the footer so the fixed stage never covers footer content.
+   Scoped to no-preference since the stage is hidden with reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  body:has(#ash-stage) {
+    padding-bottom: 110px;
+  }
+}
+
 @media (max-width: 680px) {
   .pane-grid {
     grid-template-columns: 1fr;
@@ -280,5 +313,9 @@ blockquote {
   .footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .footer-badges {
+    align-items: center;
   }
 }
