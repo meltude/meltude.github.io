@@ -16,6 +16,13 @@
     return;
   }
 
+  if (
+    window.matchMedia &&
+    window.matchMedia("(max-width: 680px)").matches
+  ) {
+    return;
+  }
+
   var el = document.getElementById("ash-player");
   if (!el) return;
 

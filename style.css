@@ -294,13 +294,23 @@ blockquote {
 /* Dedicated walker lane: pages with #ash-stage get 110px of space
    below the footer so the fixed stage never covers footer content.
    Scoped to no-preference since the stage is hidden with reduced motion. */
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) and (min-width: 681px) {
   body:has(#ash-stage) {
     padding-bottom: 110px;
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .walker-credit {
+    display: none;
+  }
+}
+
 @media (max-width: 680px) {
+  .walker-credit {
+    display: none;
+  }
+
   .pane-grid {
     grid-template-columns: 1fr;
   }
