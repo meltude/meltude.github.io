@@ -51,7 +51,7 @@ a:focus-visible {
 
 .pane {
   border: 2px solid var(--border);
-  border-radius: 0px;
+  border-radius: 16px;
   background: var(--surface);
 }
 
@@ -59,14 +59,20 @@ a:focus-visible {
 .footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   padding: 0.85rem 1rem;
+}
+
+.topbar {
+  text-align: center;
 }
 
 .topbar nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   font-size: 0.9rem;
 }
@@ -98,6 +104,7 @@ a:focus-visible {
   height: 150px;
   flex: 0 0 auto;
   border: 2px solid var(--accent);
+  border-radius: 16px;
   object-fit: cover;
 }
 
@@ -319,10 +326,19 @@ blockquote {
     flex-direction: column;
   }
 
-  .topbar,
   .footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .topbar {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .topbar nav {
+    justify-content: center;
   }
 
   .footer-badges {
