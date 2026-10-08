@@ -65,6 +65,10 @@ a:focus-visible {
 }
 
 .topbar {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0.85rem 2rem;
   text-align: center;
 }
 
@@ -332,6 +336,9 @@ blockquote {
   }
 
   .topbar {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
     align-items: center;
     flex-direction: column;
     text-align: center;
