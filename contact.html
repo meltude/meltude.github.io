@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="How to contact Meltude." />
+    <meta
+      name="description"
+      data-i18n-content="contact.meta.description"
+      content="How to contact Meltude."
+    />
     <link rel="icon" type="image/svg+xml" href="icon.png" />
-    <title>MeltudeContacts()</title>
+    <title data-i18n="contact.meta.title">MeltudeContacts()</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="preload"
@@ -17,21 +21,32 @@
   </head>
   <body>
     <div class="page-shell">
-      <header class="topbar pane">
-        <nav aria-label="Main navigation">
-          <a href="index.html">Overview</a>
-          <a href="projects.html">Projects</a>
-          <a href="notes.html">Notes</a>
-          <a href="contact.html" aria-current="page">Contact</a>
-          <a href="credits.html">Credits</a>
-        </nav>
-      </header>
+      <div class="topbar-wrap">
+        <header class="topbar pane">
+          <nav aria-label="Main navigation" data-i18n-aria-label="nav.label">
+            <a href="index.html" data-i18n="nav.overview">Overview</a>
+            <a href="projects.html" data-i18n="nav.projects">Projects</a>
+            <a href="notes.html" data-i18n="nav.notes">Notes</a>
+            <a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a>
+            <a href="credits.html" data-i18n="nav.credits">Credits</a>
+          </nav>
+        </header>
+        <div class="lang-switcher lang-switcher--compact pane">
+          <button id="lang-toggle" type="button" aria-label="Switch to Russian">
+            RU
+          </button>
+        </div>
+      </div>
 
       <div class="layout">
         <main class="content">
-          <section class="pane-grid" aria-label="Contact links">
+          <section
+            class="pane-grid"
+            aria-label="Contact links"
+            data-i18n-aria-label="contact.aria"
+          >
             <div class="section-divider">
-              <h3>Contacts:</h3>
+              <h3 data-i18n="contact.title">Contacts:</h3>
             </div>
             <article class="pane">
               <h3>Codeberg</h3>
@@ -98,7 +113,8 @@
                 href="https://t.me/TeamSlag"
                 target="_blank"
                 rel="noopener noreferrer"
-                >My organization <span aria-hidden="true">-&gt;</span></a
+                ><span data-i18n="contact.teamslag_link">My organization</span>
+                <span aria-hidden="true">-&gt;</span></a
               >
             </article>
           </section>
@@ -112,6 +128,7 @@
             href="https://github.com/meltude/meltude.github.io"
             target="_blank"
             rel="noopener"
+            data-i18n="footer.source"
             >Source code</a
           >
           &middot;
@@ -120,10 +137,12 @@
             href="https://madmalik.github.io/mononoki/"
             target="_blank"
             rel="noopener"
+            data-i18n="footer.font"
             >Font</a
           >
         </p>
       </footer>
     </div>
+    <script src="i18n.js" defer></script>
   </body>
 </html>

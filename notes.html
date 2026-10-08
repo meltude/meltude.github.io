@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
+      data-i18n-content="notes.meta.description"
       content="More about Meltude: interests, setup and favorite games."
     />
     <link rel="icon" type="image/svg+xml" href="icon.png" />
-    <title>MeltudeNotes()</title>
+    <title data-i18n="notes.meta.title">MeltudeNotes()</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="preload"
@@ -20,63 +21,74 @@
   </head>
   <body>
     <div class="page-shell">
-      <header class="topbar pane">
-        <nav aria-label="Main navigation">
-          <a href="index.html">Overview</a>
-          <a href="projects.html">Projects</a>
-          <a href="notes.html" aria-current="page">Notes</a>
-          <a href="contact.html">Contact</a>
-          <a href="credits.html">Credits</a>
-        </nav>
-      </header>
+      <div class="topbar-wrap">
+        <header class="topbar pane">
+          <nav aria-label="Main navigation" data-i18n-aria-label="nav.label">
+            <a href="index.html" data-i18n="nav.overview">Overview</a>
+            <a href="projects.html" data-i18n="nav.projects">Projects</a>
+            <a href="notes.html" aria-current="page" data-i18n="nav.notes">Notes</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+            <a href="credits.html" data-i18n="nav.credits">Credits</a>
+          </nav>
+        </header>
+        <div class="lang-switcher lang-switcher--compact pane">
+          <button id="lang-toggle" type="button" aria-label="Switch to Russian">
+            RU
+          </button>
+        </div>
+      </div>
 
       <div class="layout">
         <main class="content">
-          <section class="pane-grid" aria-label="Biography">
+          <section
+            class="pane-grid"
+            aria-label="Biography"
+            data-i18n-aria-label="notes.aria"
+          >
             <div class="section-divider">
-              <h3>Notes:</h3>
+              <h3 data-i18n="notes.title">Notes:</h3>
             </div>
             <article class="pane">
-              <h3>About me</h3>
+              <h3 data-i18n="notes.about_title">About me</h3>
               <dl class="fact-list">
                 <div>
-                  <dt>Pronouns</dt>
-                  <dd>Jerk / Bum / Bumie</dd>
+                  <dt data-i18n="notes.pronouns_dt">Pronouns</dt>
+                  <dd data-i18n="notes.pronouns_dd">Jerk / Bum / Bumie</dd>
                 </div>
                 <div>
-                  <dt>Political view</dt>
-                  <dd>Left-wing liberalism</dd>
+                  <dt data-i18n="notes.political_dt">Political view</dt>
+                  <dd data-i18n="notes.political_dd">Left-wing liberalism</dd>
                 </div>
                 <div>
-                  <dt>Orientation</dt>
-                  <dd>Bisexual, not looking for a relationship.</dd>
+                  <dt data-i18n="notes.orientation_dt">Orientation</dt>
+                  <dd data-i18n="notes.orientation_dd">Bisexual, not looking for a relationship.</dd>
                 </div>
                 <div>
-                  <dt>Languages</dt>
-                  <dd>English and Russian; currently learning Slovak.</dd>
+                  <dt data-i18n="notes.languages_dt">Languages</dt>
+                  <dd data-i18n="notes.languages_dd">English and Russian; currently learning Slovak.</dd>
                 </div>
               </dl>
             </article>
 
             <article class="pane">
-              <h3>Things I like</h3>
-              <p class="muted">
+              <h3 data-i18n="notes.likes_title">Things I like</h3>
+              <p class="muted" data-i18n="notes.likes_p1">
                 Learning Go and helping developers with niche projects on
                 GitHub.
               </p>
-              <p class="muted">Also interested in network engineering.</p>
+              <p class="muted" data-i18n="notes.likes_p2">Also interested in network engineering.</p>
             </article>
 
             <article class="pane">
-              <h3>Setup</h3>
-              <p class="muted">
+              <h3 data-i18n="notes.setup_title">Setup</h3>
+              <p class="muted" data-i18n="notes.setup_text">
                 NixOS 26.11 (unstable channel) with SwayFX, an amazing window
                 compositor fork of SwayWM.
               </p>
             </article>
 
             <article class="pane">
-              <h3>Favorite games</h3>
+              <h3 data-i18n="notes.games_title">Favorite games</h3>
               <ul class="chip-list">
                 <li>
                   <a
@@ -147,6 +159,7 @@
             href="https://github.com/meltude/meltude.github.io"
             target="_blank"
             rel="noopener"
+            data-i18n="footer.source"
             >Source code</a
           >
           &middot;
@@ -155,10 +168,12 @@
             href="https://madmalik.github.io/mononoki/"
             target="_blank"
             rel="noopener"
+            data-i18n="footer.font"
             >Font</a
           >
         </p>
       </footer>
     </div>
+    <script src="i18n.js" defer></script>
   </body>
 </html>

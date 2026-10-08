@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
+      data-i18n-content="index.meta.description"
       content="unpacking 'https://flakehub.com/f/DeterminateSystems/nixpkgs-weekly/0.1' into the Git cache..."
     />
     <link rel="icon" type="image/svg+xml" href="icon.png" />
-    <title>MeltudeAbout()</title>
+    <title data-i18n="index.meta.title">MeltudeAbout()</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="ash-walker.css" />
     <link
@@ -21,52 +22,64 @@
   </head>
   <body>
     <div class="page-shell">
-      <header class="topbar pane">
-        <nav aria-label="Main navigation">
-          <a href="index.html" aria-current="page">Overview</a>
-          <a href="projects.html">Projects</a>
-          <a href="notes.html">Notes</a>
-          <a href="contact.html">Contact</a>
-          <a href="credits.html">Credits</a>
-        </nav>
-      </header>
+      <div class="topbar-wrap">
+        <header class="topbar pane">
+          <nav aria-label="Main navigation" data-i18n-aria-label="nav.label">
+            <a href="index.html" aria-current="page" data-i18n="nav.overview">Overview</a>
+            <a href="projects.html" data-i18n="nav.projects">Projects</a>
+            <a href="notes.html" data-i18n="nav.notes">Notes</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+            <a href="credits.html" data-i18n="nav.credits">Credits</a>
+          </nav>
+        </header>
+        <div class="lang-switcher lang-switcher--compact pane">
+          <button id="lang-toggle" type="button" aria-label="Switch to Russian">
+            RU
+          </button>
+        </div>
+      </div>
 
       <div class="layout">
         <main class="content">
           <article class="pane">
-            <h3>Welcome to Meltude.me!</h3>
-            <p class="muted">
+            <h3 data-i18n="index.welcome.title">Welcome to Meltude.me!</h3>
+            <p class="muted" data-i18n="index.welcome.p1">
               This site exists just to answer questions like “who are you”, “how
               old are you”, etc.
             </p>
-            <p class="muted">
+            <p class="muted" data-i18n="index.welcome.p2">
               So yeah, basically it’s a biography site. Have a nice day!
             </p>
           </article>
 
-          <section class="hero pane" aria-label="Profile">
+          <section
+            class="hero pane"
+            aria-label="Profile"
+            data-i18n-aria-label="index.profile.aria"
+          >
             <img
               class="profile-picture"
               src="pfp.webp"
               alt="Meltude's profile picture"
+              data-i18n-alt="index.profile.alt"
             />
             <div class="profile-details">
               <dl class="fact-list">
                 <div>
-                  <dt>Name</dt>
-                  <dd>Meltude</dd>
+                  <dt data-i18n="index.profile.name_dt">Name</dt>
+                  <dd data-i18n="index.profile.name_dd">Meltude</dd>
                 </div>
                 <div>
-                  <dt>Age</dt>
-                  <dd>16 y.o.</dd>
+                  <dt data-i18n="index.profile.age_dt">Age</dt>
+                  <dd data-i18n="index.profile.age_dd">16 y.o.</dd>
                 </div>
                 <div>
-                  <dt>Birthday</dt>
+                  <dt data-i18n="index.profile.birthday_dt">Birthday</dt>
                   <dd>23.09</dd>
                 </div>
                 <div>
-                  <dt>About</dt>
-                  <dd>
+                  <dt data-i18n="index.profile.about_dt">About</dt>
+                  <dd data-i18n="index.profile.about_dd">
                     Just a NixOS user and owner of TeamSlag, studying to be a
                     network engineer.
                   </dd>
@@ -75,36 +88,44 @@
             </div>
           </section>
 
-          <section class="pane-grid" aria-label="Site sections">
+          <section
+            class="pane-grid"
+            aria-label="Site sections"
+            data-i18n-aria-label="index.sections.aria"
+          >
             <article class="pane">
-              <h3>Projects:</h3>
-              <p class="muted">i have no explanation</p>
+              <h3 data-i18n="index.cards.projects_title">Projects:</h3>
+              <p class="muted" data-i18n="index.cards.projects_text">i have no explanation</p>
               <a class="text-link" href="projects.html"
-                >Read it <span aria-hidden="true">-&gt;</span></a
+                ><span data-i18n="index.cards.projects_link">Read it</span>
+                <span aria-hidden="true">-&gt;</span></a
               >
             </article>
 
             <article class="pane">
-              <h3>About:</h3>
-              <p class="muted">my detailed description.</p>
+              <h3 data-i18n="index.cards.about_title">About:</h3>
+              <p class="muted" data-i18n="index.cards.about_text">my detailed description.</p>
               <a class="text-link" href="notes.html"
-                >Read it <span aria-hidden="true">-&gt;</span></a
+                ><span data-i18n="index.cards.about_link">Read it</span>
+                <span aria-hidden="true">-&gt;</span></a
               >
             </article>
 
             <article class="pane">
-              <h3>Contacts:</h3>
-              <p class="muted"><i>*ahem*</i> its just my contacts?</p>
+              <h3 data-i18n="index.cards.contacts_title">Contacts:</h3>
+              <p class="muted" data-i18n="index.cards.contacts_text"><i>*ahem*</i> its just my contacts?</p>
               <a class="text-link" href="contact.html"
-                >Read it <span aria-hidden="true">-&gt;</span></a
+                ><span data-i18n="index.cards.contacts_link">Read it</span>
+                <span aria-hidden="true">-&gt;</span></a
               >
             </article>
 
             <article class="pane">
-              <h3>Credits:</h3>
-              <p class="muted"><i>*ahem*</i> its just friends?</p>
+              <h3 data-i18n="index.cards.credits_title">Credits:</h3>
+              <p class="muted" data-i18n="index.cards.credits_text"><i>*ahem*</i> its just friends?</p>
               <a class="text-link" href="credits.html"
-                >Read it <span aria-hidden="true">-&gt;</span></a
+                ><span data-i18n="index.cards.credits_link">Read it</span>
+                <span aria-hidden="true">-&gt;</span></a
               >
             </article>
           </section>
@@ -118,6 +139,7 @@
             href="https://github.com/meltude/meltude.github.io"
             target="_blank"
             rel="noopener"
+            data-i18n="footer.source"
             >Source code</a
           >
           &middot;
@@ -126,10 +148,12 @@
             href="https://madmalik.github.io/mononoki/"
             target="_blank"
             rel="noopener"
+            data-i18n="footer.font"
             >Font</a
           >
         </p>
       </footer>
     </div>
+    <script src="i18n.js" defer></script>
   </body>
 </html>
