@@ -21,6 +21,49 @@
       author: "Meltude",
     },
     {
+      text: "DAMNED IS MAN FOR FAILING TO FOLLOW MY RULE, MY WORD, MY LAW",
+      author: "Terminals, Ultrakill",
+    },
+    {
+      text: "Disgrace. Humiliation.",
+      author: "Cutscene, Ultrakill",
+    },
+    {
+      text: "Presumptions are more terrifying than anything else. Especially when you are under the impression that your strengths and abilities are impressive.",
+      author:
+        "Kira  Yoshikage, JoJo's Bizzare Adventure: Diamond is Unbreakable ",
+    },
+    {
+      text: "Even if the only things you say are yes or no I'll see blue sky...",
+      author: "lyrics from Skies Forever Blue (TobyFox & Itoki Hana)",
+    },
+    {
+      text: "Leaving this world isnt as scary as it seems...",
+      author: "Richard, Hotline Miami 2: Wrong Number",
+    },
+    {
+      text: "c-style синтакс афигенный!!!",
+      author:
+        "Inuhepott (at least i stole this quote from his site, im such a bastard muehehehe))))",
+    },
+    {
+      text: "GNU fanaticism is bad",
+      author:
+        "i could say that every fanaticism is bad, i could write a big statement there but im lazy",
+    },
+    {
+      text: "I got gitignored...",
+      author: "Random dude from Sharplow discord server",
+    },
+    {
+      text: "Я Интел юзаюю потому что меня батя пиздил об комп с амд.",
+      author: "ArtemZeonov",
+    },
+    {
+      text: "новый проект Redhat Systemd Вирус Эксплоит GCC кибероружие Redhat угроза",
+      author: "https://github.com/redhatgccsystemd",
+    },
+    {
       text: "Be proud of your Death Count! The more you die, the more you're learning.",
       author: "Celeste",
     },
