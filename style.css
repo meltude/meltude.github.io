@@ -1,13 +1,13 @@
 :root {
-  --background: #0f1014; /* base00 */
-  --surface: #111216; /* base01 */
-  --surface-raised: #1c1f27; /* derived from base01 — base02 duplicates base01 */
-  --border: #43444d; /* base03 */
-  --text: #b6bac8; /* base0C */
-  --muted: #868690; /* base05 */
-  --subtle: #575861; /* base04 */
-  --accent: #999eb2; /* base08 */
-  --link: #d3d5de; /* base0A */
+  --background: #0a0a0a;
+  --surface: #111111;
+  --surface-raised: #1f1f1f;
+  --border: #2e2e2e;
+  --text: #e5e5e5;
+  --muted: #a3a3a3;
+  --subtle: #737373;
+  --accent: #ffffff;
+  --link: #e5e5e5;
 }
 
 @font-face {
