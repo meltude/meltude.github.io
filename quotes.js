@@ -9,6 +9,10 @@
       author: "Niko, OneShot",
     },
     {
+      text: "I'll let you get right to it Now I only want you gone",
+      author: "Want You Gone by Aperture Science Psychoacoustics Laboratory",
+    },
+    {
       text: "See, in the future, everything dies... for the most part. ",
       author: "The End is Nigh",
     },
