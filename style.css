@@ -433,6 +433,8 @@ blockquote {
   transform: rotate(10deg);
   transform-origin: center;
 }
+
+@media (max-width: 700px) {
   .pane-grid {
     grid-template-columns: 1fr;
   }
