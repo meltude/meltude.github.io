@@ -426,14 +426,6 @@ blockquote {
   width: auto;
 }
 
-.thanks-art {
-  width: 180px;
-  height: 180px;
-  margin-top: 3rem;
-  transform: rotate(10deg);
-  transform-origin: center;
-}
-
 @media (max-width: 700px) {
   .pane-grid {
     grid-template-columns: 1fr;
